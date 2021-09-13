@@ -165,7 +165,7 @@ if [ $release = "Centos" ]
 		yellow " 不支持当前系统 "
 		exit 1
 	fi
-wget -N -6 https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/wgcf
+wget -N -6 https://rawgithusercontent.com/hallofhell/v2-multi/master/wgcf
 cp wgcf /usr/local/bin/wgcf
 sudo chmod +x /usr/local/bin/wgcf
 echo | wgcf register
@@ -224,7 +224,7 @@ if [ $release = "Centos" ]
 		yellow " 不支持当前系统 "
 		exit 1
 	fi
-wget -N -6 https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/wgcf
+wget -N -6 https://rawgithusercontent.com/hallofhell/v2-multi/master/wgcf
 cp wgcf /usr/local/bin/wgcf
 sudo chmod +x /usr/local/bin/wgcf
 echo | wgcf register
@@ -284,7 +284,7 @@ if [ $release = "Centos" ]
 		yellow " 不支持当前系统 "
 		exit 1
 	fi
-wget -N -6 https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/wgcf
+wget -N -6 https://rawgithusercontent.com/hallofhell/v2-multi/master/wgcf
 cp wgcf /usr/local/bin/wgcf
 sudo chmod +x /usr/local/bin/wgcf
 echo | wgcf register
@@ -342,7 +342,7 @@ if [ $release = "Centos" ]
 		yellow " 不支持当前系统 "
 		exit 1
 	fi
-wget -N https://github.com/ViRb3/wgcf/releases/download/v2.2.3/wgcf_2.2.3_linux_amd64 -O /usr/local/bin/wgcf
+wget -N https://github.com/ViRb3/wgcf/releases/download/v2.2.8/wgcf_2.2.8_linux_amd64 -O /usr/local/bin/wgcf
 sudo chmod +x /usr/local/bin/wgcf
 echo | wgcf register
 until [ $? -eq 0 ]
@@ -398,7 +398,7 @@ if [ $release = "Centos" ]
 		yellow " 不支持当前系统 "
 		exit 1
 	fi
-wget -N https://github.com/ViRb3/wgcf/releases/download/v2.2.3/wgcf_2.2.3_linux_amd64 -O /usr/local/bin/wgcf
+wget -N https://github.com/ViRb3/wgcf/releases/download/v2.2.8/wgcf_2.2.8_linux_amd64 -O /usr/local/bin/wgcf
 chmod +x /usr/local/bin/wgcf
 echo | wgcf register
 until [ $? -eq 0 ]
@@ -455,7 +455,7 @@ if [ $release = "Centos" ]
 		yellow " 不支持当前系统 "
 		exit 1
 	fi
-wget -N https://github.com/ViRb3/wgcf/releases/download/v2.2.3/wgcf_2.2.3_linux_amd64 -O /usr/local/bin/wgcf
+wget -N https://github.com/ViRb3/wgcf/releases/download/v2.2.8/wgcf_2.2.8_linux_amd64 -O /usr/local/bin/wgcf
 chmod +x /usr/local/bin/wgcf
 echo | wgcf register
 until [ $? -eq 0 ]
@@ -513,7 +513,7 @@ if [ $release = "Centos" ]
 		yellow " 不支持当前系统 "
 		exit 1
 	fi
-wget -N https://github.com/ViRb3/wgcf/releases/download/v2.2.3/wgcf_2.2.3_linux_amd64 -O /usr/local/bin/wgcf
+wget -N https://github.com/ViRb3/wgcf/releases/download/v2.2.8/wgcf_2.2.8_linux_amd64 -O /usr/local/bin/wgcf
 chmod +x /usr/local/bin/wgcf
 echo | wgcf register
 until [ $? -eq 0 ]
@@ -570,7 +570,7 @@ if [ $release = "Centos" ]
 		yellow " 不支持当前系统 "
 		exit 1
 	fi
-wget -N https://github.com/ViRb3/wgcf/releases/download/v2.2.3/wgcf_2.2.3_linux_amd64 -O /usr/local/bin/wgcf
+wget -N https://github.com/ViRb3/wgcf/releases/download/v2.2.8/wgcf_2.2.8_linux_amd64 -O /usr/local/bin/wgcf
 chmod +x /usr/local/bin/wgcf
 echo | wgcf register
 until [ $? -eq 0 ]
@@ -628,7 +628,7 @@ if [ $release = "Centos" ]
 		yellow " 不支持当前系统 "
 		exit 1
 	fi
-wget -N https://github.com/ViRb3/wgcf/releases/download/v2.2.3/wgcf_2.2.3_linux_amd64 -O /usr/local/bin/wgcf
+wget -N https://github.com/ViRb3/wgcf/releases/download/v2.2.8/wgcf_2.2.8_linux_amd64 -O /usr/local/bin/wgcf
 chmod +x /usr/local/bin/wgcf
 echo | wgcf register
 until [ $? -eq 0 ]
@@ -740,12 +740,12 @@ systemctl status wg-quick@wgcf
 }
 
 function up4(){
-wget -N --no-check-certificate https://raw.githubusercontent.com/YG-tsj/CFWarp-Pro/main/multi.sh && chmod +x multi.sh && ./multi.sh
+wget -N --no-check-certificate https://raw.githubusercontent.com/hallofhell/v2-multi/master/multi.sh && chmod +x multi.sh && ./multi.sh
 }
 
 function up6(){
 echo -e nameserver 2a00:1098:2c::1 > /etc/resolv.conf
-wget -6 -N --no-check-certificate https://raw.githubusercontent.com/YG-tsj/CFWarp-Pro/main/multi.sh && chmod +x multi.sh && ./multi.sh
+wget -6 -N --no-check-certificate https://raw.githubusercontent.com/hallofhell/v2-multi/master/multi.sh && chmod +x multi.sh && ./multi.sh
 }
 
 #主菜单
